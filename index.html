@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Broadcasting</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="weather-app">
+    <div class="background"></div>
+    <div class="overlay">
+      <div class="main-screen">
+        <h1>Weather Broadcasting</h1>
+        <div class="search-box">
+          <input type="text" id="city-input" placeholder="Enter city">
+          <button id="search-button">Search</button>
+        </div>
+        <div class="weather-info">
+          <h2 id="city-name">City Name</h2>
+          <div id="weather-icon"></div>
+          <p id="temperature">Temperature: --°C</p>
+          <p id="weather-condition">Description: --</p>
+          <p id="date-time">Date and Time: --</p>
+          <p id="sunrise">Sunrise: --</p>
+          <p id="sunset">Sunset: --</p>
+          <p id="air-quality">Air Quality: --</p>
+          <p id="humidity">Humidity: --%</p>
+          <p id="precipitation">Precipitation: --%</p>
+        </div>
+        <button id="forecast-button">See Forecast</button>
+      </div>
+      <div class="forecast-screen" style="display:none;">
+        <button id="back-button">Back</button>
+        <div id="weekly-forecast"></div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
